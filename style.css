@@ -10,3 +10,62 @@ body {
 }
 
 /* Add styles here! */
+
+body {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+header {
+  margin: 88px 0 64px 0;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  border-top: 8px solid hsl(0deg, 0%, 40%);
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.max-width-wrapper {
+  --wrapper-padding: 24px;
+
+  max-width: 800px;
+  padding: 0 var(--wrapper-padding);
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background: peachpuff; */
+}
+
+.intro-chunk {
+  max-width: 400px;
+}
+
+.card {
+  margin-left: calc(var(--wrapper-padding) * -1);
+  margin-right: calc(var(--wrapper-padding) * -1);
+  padding: 8px var(--wrapper-padding);
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  background: white;
+}
+
+.indented-heading {
+  --shift: 32px;
+
+  margin: 0;
+  margin-left: calc(var(--shift) * -1);
+  max-width: fit-content;
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  padding: 16px var(--shift);
+  background: hsl(45deg, 100%, 50%);
+  font-size: 1.5rem;
+}
